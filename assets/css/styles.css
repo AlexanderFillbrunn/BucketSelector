@@ -1,0 +1,64 @@
+#container {
+  position: relative;
+  width: 1200px;
+  margin: 0px auto;
+}
+
+#plotting {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin-left: 600px;
+  background: #ddd;
+}
+
+#plotting > svg {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 1px solid black;
+}
+
+#controls {
+  float: left;
+}
+
+#controls > fieldset {
+  width: 550px;
+}
+
+rect.tile {
+  stroke: lightgray;
+  stroke-width: 0;
+}
+
+rect.tile.visited {
+
+}
+
+rect.tile.current {
+  fill: red;
+}
+
+rect.tile.wall {
+  fill: black;
+  stroke: black;
+}
+
+rect.tile.start {
+  fill: blue;
+}
+
+rect.tile.end {
+  fill: green;
+}
+
+#selectors {
+  padding: 0;
+}
+
+#selectors > li {
+  list-style: none;
+}
